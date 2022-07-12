@@ -6,9 +6,9 @@ public class Truck {
     private int id;
     private String name;
     private State state;
-    private Driver driver;
+    private String driver;
 
-    public Truck(int id, String name, State state, Driver driver) {
+    public Truck(int id, String name, State state, String driver) {
         this.id = id;
         this.name = name;
         this.state = state;
@@ -43,21 +43,18 @@ public class Truck {
         this.state = state;
     }
 
-    public Driver getDriver() {
+    public String getDriver() {
         return driver;
     }
 
-    public void setDriver(Driver driver) {
+    public void setDriver(String driver) {
         this.driver = driver;
     }
 
     @Override
     public String toString() {
-        return "Truck{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", state=" + state +
-                ", driver=" + driver +
-                '}';
+        return "id: " + id +
+                " Truck: " + name +
+                " driver: " + driver;
     }
 }

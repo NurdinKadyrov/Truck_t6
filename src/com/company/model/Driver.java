@@ -9,11 +9,10 @@ public class Driver {
     private Situation situation;
     private String driveName;
 
-    public Driver(int id, String name, Situation situation, String driveName) {
+    public Driver(int id, String name, Situation situation) {
         this.id = id;
         this.name = name;
         this.situation = situation;
-        this.driveName = driveName;
     }
 
     public Driver() {
@@ -53,11 +52,10 @@ public class Driver {
 
     @Override
     public String toString() {
-        return "Driver{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", situation=" + situation +
-                ", driveName='" + driveName;
+        return "id: " + id +
+                " name: " + name +
+                " situation: " + situation +
+                " driveName: " + driveName;
     }
 
     }
